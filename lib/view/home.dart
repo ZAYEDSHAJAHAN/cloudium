@@ -93,7 +93,7 @@ class _HomepageState extends State<Homepage> {
                             );
                           },
                           separatorBuilder: (BuildContext context, int index) =>
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                           itemCount: articleslist.length);
