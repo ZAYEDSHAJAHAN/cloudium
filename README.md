@@ -10,4 +10,4 @@ to run the project flutter run
 
 here we use the http package for API calling 
 &
-we can use here screen responsive some sizers also here
+we can use here sizers pulgin for screen responsive.

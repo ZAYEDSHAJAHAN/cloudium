@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloudium/model/aerticlemodel.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:sizer/sizer.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -45,7 +46,7 @@ class _HomepageState extends State<Homepage> {
               backgroundColor: const Color.fromRGBO(62, 201, 157, 1),
               automaticallyImplyLeading: false,
               leading: const Icon(Icons.dehaze_outlined),
-              leadingWidth: 50,
+              leadingWidth: 5.5.h,
               title: const Text("NY Times Most Popular"),
               actions: [
                 IconButton(onPressed: () {}, icon: Icon(Icons.search)),
@@ -66,8 +67,8 @@ class _HomepageState extends State<Homepage> {
                                   shape: BoxShape.circle,
                                   color: Colors.grey,
                                 ),
-                                height: 50,
-                                width: 50,
+                                height: 6.h,
+                                width: 6.h,
                               ),
                               title: Text(
                                 articleslist[index].title,
@@ -89,12 +90,13 @@ class _HomepageState extends State<Homepage> {
                                   )
                                 ],
                               ),
-                              trailing: Icon(Icons.navigate_next_outlined),
+                              trailing:
+                                  const Icon(Icons.navigate_next_outlined),
                             );
                           },
                           separatorBuilder: (BuildContext context, int index) =>
-                              const SizedBox(
-                                height: 10,
+                              SizedBox(
+                                height: 2.5.h,
                               ),
                           itemCount: articleslist.length);
                     }))));
